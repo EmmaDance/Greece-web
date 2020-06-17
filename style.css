@@ -1,0 +1,404 @@
+@font-face {
+  font-family: "Slayer";
+  src: url(fonts/slayer.ttf) format("truetype");
+}
+@font-face {
+  font-family: "RawengulkRegular";
+  src: url(fonts/RawengulkRegular.otf) format("opentype");
+}
+
+/*
+* === GENERAL ===
+*/
+
+body {
+ font-family: 'RawengulkRegular';
+ font-size: 1.1em;
+background-image: url(images/papirus.jpg);
+background-attachment: fixed;
+}
+.container {
+	background-color: rgba(255, 254, 250, 0.91);
+	padding: 5px 30px 5px 30px;
+}
+
+h2,h3,h4,h5,h6 {
+	color: #b5502e;
+}
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+}
+
+.sc {
+	position:fixed;
+	bottom:50px;
+	right:20px;
+	max-width:150px;
+}
+
+#speech {
+	position:fixed;
+	bottom:230px;
+	right:60px;
+	width:440px;
+	height:400px;
+	background-image: url(images/speech.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	padding:3%;
+	display: none;
+	
+}
+
+i {
+	cursor: pointer;
+}
+
+.title  {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.subtitle {
+	text-align: center;
+}
+
+ul {
+	list-style-type: circle;
+	margin-bottom: 5px;
+}
+
+.top {
+	color: #fff;
+	text-align:center;
+	font-family: 'Papyrus';
+}
+.top h1 {
+	padding:35px 0px 30px 0px;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media-figure {
+  margin-right: 1em;
+}
+
+.media-body {
+  flex: 1;
+
+}
+
+#notite {
+position:absolute;
+top:0%;
+right:5%;
+z-index:10
+}
+
+/*
+* === NAVBAR ===
+*/
+.navbar {
+  padding: 0px;
+ 
+}
+
+.navbar, .top h1, footer {
+ background-color: rgba(135, 129, 120, 0.77);
+}
+
+.nav-item {
+	 text-align: center;
+}
+
+.form-control {
+	width: auto;
+	padding: 5px;
+    line-height: 0.5;
+}
+.navbar .btn {
+	color:  #aba191;
+	background-color: #fff;
+	line-height: 0.6;
+	border-color:  #aba191;
+	
+}
+.navbar .btn:hover {
+	color:  #fff;
+	background-color: #aba191;
+
+	
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: #b5502e;
+	background-color: #fff;
+	 padding-bottom: 5px;
+     padding-top: 5px;
+	 padding-left: 15px;
+	padding-right: 15px;
+	 margin-left: 5px;
+	 margin-right: 5px;
+	 border-radius: 5px 5px 0px 0px;
+	 box-shadow: 2px -2px 4px #555;
+	 
+}
+
+.nav-item {
+	padding-top: 10px;
+}
+
+
+.nav-item:hover  > .nav-link{
+	padding-bottom:15px;
+
+}
+
+.nav-item:hover  {
+	position: relative;
+	padding-top:0;
+	
+
+}
+
+ .navbar-light .navbar-nav  .current{
+	color: #000;
+	border-bottom: 1px solid #aba191;
+}
+
+@media (min-width: 1228px){
+#nav #navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+}
+
+@media (min-width:768px){
+.navbar-collapse  {
+	padding-left: 0px !important;
+	padding-right :0px;
+    margin-bottom: 0px;
+
+}}
+
+/*
+* === HOME===
+*/
+ #map{
+max-width:100%;
+padding-right: 0px;
+ }
+ 
+
+ 
+ /*
+* === RAZBOAIE===
+*/
+
+.razboaie-img {
+	max-width:96%;
+padding-right: 0px;
+}
+
+.r-img-container {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.razboaie-text {
+	height:350px;
+	
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+ 
+ /*
+* === CULTURA===
+*/
+.p-content {
+	padding: 25px;
+}
+ 
+ .p-title {
+	 text-align:center;
+ }
+ 
+ /*
+* === RELIGIA ===
+*/
+
+.exp {
+	position:fixed;
+	top: 35%;
+	left: 40%;
+	background-color: #fff;
+	width:300px;
+	max-height:350px;
+	padding: 10px;
+	border-radius:10px;
+	border: 2px solid grey;
+	box-shadow: 5px 5px 4px #2E2E2E;
+	
+}
+ 
+ 
+ /*
+* === POLITICA ===
+*/
+ .politica img {
+	 max-width:80%;
+	 margin-bottom:20px;
+ }
+ 
+ 
+ /*
+* === PERSONALITATI===
+*/
+@media (min-width:600px){
+	.pers-img{
+max-width: 100%;
+
+}
+
+.pers-indiv {
+margin-bottom:7rem;
+text-align:center;
+}
+}
+@media (min-width:960px){
+.pers-img {
+max-width:100%;
+
+
+}
+
+.pers-indiv {
+margin-bottom:5rem;
+text-align:center;
+}
+}
+
+iframe {
+	max-width: 100%;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	margin-left: 2.5rem;
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	max-width: 400px;
+	height: 500px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	overflow-y: scroll;
+}
+
+
+ /*
+* === DICTIONAR ===
+*/
+
+.collapsed a:hover {
+	text-decoration: none;
+}
+
+.def {
+	padding:15px;
+}
+
+ /*
+* === EVALUARE ===
+*/
+
+.ex-t {
+	color: #026071;
+}
+
+.verify {
+	border: 1px solid gray;
+	padding: 3px;
+}
+
+
+ .draggable { width: 150px; height: 80px; padding: 0.3em; float: left; margin: 10px 10px 10px 0; text-align:center; z-index:3; }
+ .droppable { width: 175px; height: 125px; float: left; margin: 0px; text-align:center; z-index:2;}
+  
+  .droppable p { position:relative; top:40%;}
+  .draggable p {}
+
+  .drag , .drop {
+	  display:flex;
+	  justify-content: center;
+  }
+
+  
+  
+footer {
+  color:#fff;
+  padding: 8px;
+  text-align: center;
+
+}
+
+
