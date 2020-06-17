@@ -1,0 +1,67 @@
+
+	<div class="container top">
+	  <h1>GRECIA ANTICA</h1>
+	</div>
+
+   
+
+    <div class="container">
+
+      <nav class="navbar navbar-light navbar-toggleable-md" id="nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#containerNavbarCenter" aria-controls="containerNavbarCenter" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-lg-center" id="containerNavbarCenter">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php">Descriere</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="politica.php">Politica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="razboaie.php">Razboaie</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="cultura.php">Cultura</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="personalitati.php">Personalitati</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="dictionar.php">Dictionar</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="evaluare.php">Evaluare</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown05">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+		  <form class="form-inline my-2 my-md-0">
+            <input class="form-control mr-sm-2" type="text">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cauta</button>
+          </form>
+		  
+        </div>
+      </nav>
+
+<script>
+	function setActive() {
+  aObj = document.getElementById('nav').getElementsByTagName('a');
+  for(i=0;i<aObj.length;i++) { 
+    if(document.location.href.indexOf(aObj[i].href)>=0) {
+      aObj[i].className='nav-link current';
+    }
+  }
+}
+
+window.onload = setActive;
+</script>
+ 

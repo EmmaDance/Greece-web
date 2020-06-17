@@ -1,0 +1,52 @@
+<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="https://use.fontawesome.com/6876b18942.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/magic.css">  
+	<link href="css/lightbox.css" rel="stylesheet">
+	  <link href="css/drop.css" rel="stylesheet">
+	 <script src="js/jquery.min.js"></script> 
+	  <script>
+$(window).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip(); 
+  $('[data-toggle="popover"]').popover();
+ // $('#sc-1').click(function(){
+//	$('#speech').html('Hellooooo there');
+	
+	
+ // });
+ $('body').on('mouseenter','i',function(){
+		$('#speech').css('display','initial');
+		$('#speech').text($(this).attr('bubble-text'));
+		//
+	});
+	$('body').on('mouseleave','i',function(){
+		$('#speech').css('display','none');
+	});
+});
+</script>
+	 
+	<!-- <script>
+	 function sc(info) {
+	 document.getElementById("speech").innerHTML = "HEYYYY";
+	 alert("DAP");
+	 }
+	 
+	 window.onload = function() {
+	 document.getElementById("sc-1").onclick = function(){sc("Hellooooo");}
+	 alert("nu");
+		}
+	  </script> -->
+	  
+	  
+	  
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.js"></script>-->
+	
+	<script
+ src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+  integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
+  crossorigin="anonymous"></script>
+ 
+ 
+  
